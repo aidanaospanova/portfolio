@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ai. Portfolio – Home</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js">
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="home">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Ai Logo" class="logo-img" />
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="project-1.html" class="nav-link">MaplePath</a>
+      <a href="project-2.html" class="nav-link">Olive Young</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section reveal">
+      <div class="hero-text">
+        <p class="eyebrow">PORTFOLIO AIDANA OSPANOVA</p>
+        <h1>Soft on style,<br>sharp on strategy.</h1>
+
+        <p class="hero-sub">
+          Marketing specialist and emerging UI/UX designer blending user research,
+          storytelling, and digital aesthetics into clear, conversion-ready experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a href="about.html" class="btn primary">About me</a>
+          <a href="#projects" class="btn ghost">View selected work</a>
+        </div>
+
+        <div class="pill-row">
+          <span class="pill">Marketing Strategy</span>
+          <span class="pill">UI/UX Design</span>
+          <span class="pill">Brand Identity</span>
+          <span class="pill">Web Design</span>
+          <span class="pill">Content & Creative</span>
+        </div>
+      </div>
+
+      <div class="hero-3d">
+        <div class="hero-3d-card glass">
+          <model-viewer id="flower-viewer"
+                        src="assets/flower.glb"
+                        alt="Crystal flower 3D model"
+                        camera-controls auto-rotate auto-rotate-delay="2000"
+                        interaction-prompt="none" exposure="1.1"
+                        shadow-intensity="0.8"
+                        style="width:100%; height:100%; border-radius:24px;">
+          </model-viewer>
+        </div>
+        <div class="hero-caption">Interactive 3D crystal flower rendered in real-time.</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Selected projects</h2>
+      <p class="section-sub">App design, brand adaptation, and strategy-driven digital experiences.</p>
+
+      <div class="projects-grid">
+
+        <!-- MAPLEPATH (full card clickable) -->
+        <article class="project-card glass tilt">
+          <a href="project-1.html" class="card-link"></a>
+
+          <div class="project-media">
+            <img src="assets/MaplePath_Logo.png" alt="MaplePath logo" class="project-logo" />
+          </div>
+
+          <div class="project-body">
+            <h3>MaplePath Immigration Support App</h3>
+            <p>A guided mobile experience helping immigrants navigate PR pathways with clarity.</p>
+
+            <div class="tag-row">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Product Design</span>
+              <span class="tag">Mobile App</span>
+            </div>
+
+            <a href="project-1.html" class="btn inline-link">View case study →</a>
+          </div>
+        </article>
+
+        <!-- OLIVE YOUNG (full card clickable) -->
+        <article class="project-card glass tilt">
+          <a href="project-2.html" class="card-link"></a>
+
+          <div class="project-media">
+            <img src="assets/Olive_Young_Logo.png" alt="Olive Young logo" class="project-logo" />
+          </div>
+
+          <div class="project-body">
+            <h3>Olive Young App Redesign</h3>
+            <p>North American UI/UX adaptation improving navigation, tone, and product clarity.</p>
+
+            <div class="tag-row">
+              <span class="tag">UI/UX</span>
+              <span class="tag">Brand Strategy</span>
+              <span class="tag">E-commerce</span>
+            </div>
+
+            <a href="project-2.html" class="btn inline-link">View case study →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-contact reveal">
+      <div class="contact-card glass">
+        <h2>Let’s build something meaningful.</h2>
+        <p>Open for opportunities across marketing, UI/UX, and digital design.</p>
+
+        <div class="contact-row">
+          <a href="mailto:ai1209.osp@gmail.com" class="btn primary">Email me</a>
+          <a href="https://www.linkedin.com/in/aidana-ospanova/"
+             target="_blank" class="btn ghost">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Aidana Ospanova. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+</body>
+</html>
+<!-- Citation: ChatGPT used to organize and generate some codes -->
