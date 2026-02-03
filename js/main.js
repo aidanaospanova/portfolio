@@ -1,4 +1,4 @@
-// MAIN INTERACTIONS
+// MAIN INTERACTION
 document.addEventListener("DOMContentLoaded", () => {
     setupReveal();
     setupTiltCards();
