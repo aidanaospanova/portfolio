@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ai. Portfolio – Home</title>
 
-  <script type="module"
-    src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js">
-  </script>
-
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -30,21 +27,18 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero section reveal">
+    <section class="hero section">
       <div class="hero-text">
         <p class="eyebrow">PORTFOLIO AIDANA OSPANOVA</p>
         <h1>Soft on style,<br>sharp on strategy.</h1>
-
         <p class="hero-sub">
           Marketing specialist and emerging UI/UX designer blending user research,
           storytelling, and digital aesthetics into clear, conversion-ready experiences.
         </p>
-
         <div class="hero-actions">
           <a href="about.html" class="btn primary">About me</a>
           <a href="#projects" class="btn ghost">View selected work</a>
         </div>
-
         <div class="pill-row">
           <span class="pill">Marketing Strategy</span>
           <span class="pill">UI/UX Design</span>
@@ -56,13 +50,14 @@
 
       <div class="hero-3d">
         <div class="hero-3d-card glass">
-          <model-viewer id="flower-viewer"
-                        src="assets/flower.glb"
-                        alt="Crystal flower 3D model"
-                        camera-controls auto-rotate auto-rotate-delay="2000"
-                        interaction-prompt="none" exposure="1.1"
-                        shadow-intensity="0.8"
-                        style="width:100%; height:100%; border-radius:24px;">
+          <model-viewer
+            id="flower-viewer"
+            src="assets/flower.glb"
+            alt="Crystal flower 3D model"
+            camera-controls auto-rotate auto-rotate-delay="2000"
+            interaction-prompt="none" exposure="1.1"
+            shadow-intensity="0.8"
+            style="width:100%; height:100%; border-radius:24px;">
           </model-viewer>
         </div>
         <div class="hero-caption">Interactive 3D crystal flower rendered in real-time.</div>
@@ -70,83 +65,108 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section reveal">
+    <section id="projects" class="section">
       <h2 class="section-title">Selected projects</h2>
       <p class="section-sub">App design, brand adaptation, and strategy-driven digital experiences.</p>
 
       <div class="projects-grid">
 
-        <!-- MAPLEPATH (full card clickable) -->
+        <!-- MAPLEPATH -->
         <article class="project-card glass tilt">
           <a href="project-1.html" class="card-link"></a>
 
-          <div class="project-media">
-            <img src="assets/MaplePath_Logo.png" alt="MaplePath logo" class="project-logo" />
+          <div class="project-header">
+            <div class="project-number">01</div>
+            <div class="project-tools">
+              <img src="assets/figma.png"
+                   alt="Figma Icon"
+                   class="tool-icon" />
+
+              <img src="assets/pslogo.png"
+                   alt="Photoshop Icon"
+                   class="tool-icon" />
+            </div>
           </div>
 
-          <div class="project-body">
-            <h3>MaplePath Immigration Support App</h3>
-            <p>A guided mobile experience helping immigrants navigate PR pathways with clarity.</p>
+          <div class="project-preview">
+            <img src="assets/cover_maple.png" alt="MaplePath app screens" class="project-image" />
+          </div>
 
+          <div class="project-content">
+            <h3>MaplePath</h3>
+            <p class="project-tagline">Immigration Support App</p>
+            <p class="project-description">
+              Helping newcomers navigate Canada's PR process through guided checklists,
+              document management, and expert consultant connections.
+            </p>
             <div class="tag-row">
-              <span class="tag">UI/UX</span>
-              <span class="tag">Product Design</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Product Strategy</span>
               <span class="tag">Mobile App</span>
             </div>
-
-            <a href="project-1.html" class="btn inline-link">View case study →</a>
+            <div class="project-cta">
+              <span class="cta-text">View case study</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
           </div>
         </article>
 
-        <!-- OLIVE YOUNG (full card clickable) -->
+        <!-- OLIVE YOUNG -->
         <article class="project-card glass tilt">
           <a href="project-2.html" class="card-link"></a>
 
-          <div class="project-media">
-            <img src="assets/Olive_Young_Logo.png" alt="Olive Young logo" class="project-logo" />
+          <div class="project-header">
+            <div class="project-number">02</div>
+            <div class="project-tools">
+              <img src="assets/figma.png"
+                   alt="Figma Icon"
+                   class="tool-icon" />
+
+              <img src="assets/ai.png"
+                   alt="Illustrator Icon"
+                   class="tool-icon" />
+
+              <img src="assets/maze.jpg"
+                   alt="Maze Icon"
+                   class="tool-icon maze-icon" />
+            </div>
           </div>
 
-          <div class="project-body">
-            <h3>Olive Young App Redesign</h3>
-            <p>North American UI/UX adaptation improving navigation, tone, and product clarity.</p>
+          <div class="project-preview">
+            <img src="assets/cover_olive.png" alt="Olive Young app screens" class="project-image" />
+          </div>
 
+          <div class="project-content">
+            <h3>Olive Young</h3>
+            <p class="project-tagline">App Redesign for North America</p>
+            <p class="project-description">
+              Adapting Korea's leading beauty platform for Western audiences with localized UX,
+              clearer navigation, and culturally-relevant design.
+            </p>
             <div class="tag-row">
-              <span class="tag">UI/UX</span>
-              <span class="tag">Brand Strategy</span>
-              <span class="tag">E-commerce</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">App Redesign</span>
+              <span class="tag">User Research</span>
             </div>
-
-            <a href="project-2.html" class="btn inline-link">View case study →</a>
+            <div class="project-cta">
+              <span class="cta-text">View case study</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
           </div>
         </article>
 
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section section-contact reveal">
-      <div class="contact-card glass">
-        <h2>Let’s build something meaningful.</h2>
-        <p>Open for opportunities across marketing, UI/UX, and digital design.</p>
-
-        <div class="contact-row">
-          <a href="mailto:ai1209.osp@gmail.com" class="btn primary">Email me</a>
-          <a href="https://www.linkedin.com/in/aidana-ospanova/"
-             target="_blank" class="btn ghost">LinkedIn</a>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2025 Aidana Ospanova. All rights reserved.</p>
+    &copy; 2025 Aidana Ospanova. All rights reserved.
   </footer>
 
   <script src="js/main.js"></script>
-  <script type="module"
-  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-</script>
-
 </body>
 </html>
-<!-- Citation: ChatGPT used to organize and generate some codes -->

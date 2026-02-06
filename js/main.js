@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".tilt");
     if (!cards.length) return;
   
-    const maxTilt = 10; // degrees
+    const maxTilt = 8; // degrees - reduced for subtlety
   
     cards.forEach((card) => {
       card.addEventListener("mousemove", (e) => {
@@ -43,14 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const rotateY = ((x - midX) / midX) * maxTilt;
         const rotateX = ((midY - y) / midY) * maxTilt;
   
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
         card.style.boxShadow =
-          "0 28px 60px rgba(0, 0, 0, 0.72), 0 0 34px rgba(168, 228, 255, 0.45)";
+          "0 32px 72px rgba(0, 0, 0, 0.75), 0 0 40px rgba(168, 228, 255, 0.4)";
       });
   
       card.addEventListener("mouseleave", () => {
-        card.style.transform = "rotateX(0deg) rotateY(0deg)";
+        card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)";
         card.style.boxShadow = "";
+        card.style.transition = "all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)";
+      });
+      
+      card.addEventListener("mouseenter", () => {
+        card.style.transition = "none";
       });
     });
   }
